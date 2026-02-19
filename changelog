@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>개정 이력 | 검사 일정 수립 업무 가이드북</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="inner">
+    <div class="nav-left">
+      <a class="btn" href="index.html">🏠 메인</a>
+      <a class="btn" href="javascript:history.back()">↩ 이전</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h1 style="margin-top:0;">개정 이력</h1>
+  </div>
+
+  <div class="section">
+    <table style="width:100%; border-collapse:collapse;">
+      <thead>
+        <tr>
+          <th style="border:1px solid #e5e7eb; padding:8px;">버전</th>
+          <th style="border:1px solid #e5e7eb; padding:8px;">개정일</th>
+          <th style="border:1px solid #e5e7eb; padding:8px;">개정 내용</th>
+          <th style="border:1px solid #e5e7eb; padding:8px;">작성자</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border:1px solid #e5e7eb; padding:8px;">v1.0</td>
+          <td style="border:1px solid #e5e7eb; padding:8px;">2026-02-05</td>
+          <td style="border:1px solid #e5e7eb; padding:8px;">최초 제정</td>
+          <td style="border:1px solid #e5e7eb; padding:8px;">조규현</td>
+        </tr>
+        <tr>
+          <td style="border:1px solid #e5e7eb; padding:8px;">v1.1</td>
+          <td style="border:1px solid #e5e7eb; padding:8px;">2026-02-18</td>
+          <td style="border:1px solid #e5e7eb; padding:8px;">
+            SOP 정의 추가, 일정 수립 절차 보강, UI 개선
+          </td>
+          <td style="border:1px solid #e5e7eb; padding:8px;">조규현</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
