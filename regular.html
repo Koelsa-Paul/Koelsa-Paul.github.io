@@ -65,7 +65,6 @@
         <li>FM현장의 경우 안내문이 조금 더 일찍 생성되며, 일괄 접수된다.(현대 1일, TK 17일, 오티스 25일)</li>
       </ul>
 
-      <!-- 스크린샷과 동일한 예시 박스 -->
       <div style="border:1px solid #000; margin-top:12px;">
         <div style="background:#d9d9d9; padding:8px 10px; font-weight:700;">
           예) 26년 1월의 대현장 가일정을 수립하고자 한다.
@@ -78,9 +77,9 @@
               11월 15~20일 ~ 12월 15~20일인 경우라면 1월이 검사 처리 기한이 된다.
             </li>
             <li>
-              <span style="color:#c00000; font-weight:700; text-decoration:underline;">만료년월이 12월</span>인 현장을 조회한다.
+              <span style="color:#c00000; font-weight:700; text-decoration:underline;">만료년월이 12월</span>인 현장을 조회한다.<br>
+              (예를 들어, 12월 조회 시, 만료일 12월 1일~31일 현장이 아닌, 만료일 12월 5~7일 ~ 1월 5~7일 현장이 조회된다.)
             </li>
-             (예를 들어, 12월 조회 시, 만료일 12월 1일~31일 현장이 아닌, 만료일 12월 5~7일 ~ 1월 5~7일 현장이 조회된다.)<br>
             <li>
               업체, 현장의 대수와 종에 따른 환산계수를 고려하여 가일정을 수립한다.
             </li>
@@ -95,7 +94,7 @@
 
         <div style="padding:10px 12px; line-height:1.6;">
           <ol style="margin:0 0 8px 0; padding-left:20px;">
-           -가일정 수립 시 '통합민원처리' 탭의 '승강기검사'에서 현장을 조회해 보아야 한다.<br>
+            <li>가일정 수립 시 '통합민원처리' 탭의 '승강기검사'에서 현장을 조회해 보아야 한다.</li>
           </ol>
 
           <ul style="margin:0; padding-left:20px;">
@@ -104,15 +103,78 @@
             <li>첫 정기검사의 경우 안내문이 무작위로 생성되어 정확한 대수를 확인해야 하기 때문이다.</li>
           </ul>
         </div>
-        
-          <h3 style="margin:10px 0 8px 0;">② 일정배정</h3>
+      </div>
 
-        <ul style="margin-bottom:12px;">
+      <h3 style="margin:16px 0 8px 0;">② 일정배정</h3>
+
+      <ul style="margin-bottom:12px;">
         <li>검사 예정일로부터 3주 ~ 1개월 전 관리주체 및 유지관리업체와 협의 후 검사일정을 확정한다.</li>
         <li>공동주택의 경우, 호기별 층수에 따라 환산계수가 달라지기 때문에 운행층수를 잘 확인하여 적절한 대수배분을 해야한다.</li>
         <li>검사일정이 확정되고 검사 시작일로부터 2~3주 전, 상세일정안내문을 발송한다.(기본 Fax 발송이나, E-Mail로 요청하는 경우도 있다.)</li>
       </ul>
 
+      <div style="border:1px solid #000; margin-top:12px;">
+        <div style="background:#d9d9d9; padding:8px 10px; font-weight:700;">
+          전산 배정 입력 예시(템플릿)
+        </div>
+
+        <div style="padding:10px 12px;">
+          <img src="/assets/assign_screen.png"
+               alt="전산 배정 화면 캡처"
+               style="width:100%; border:1px solid #e5e7eb; border-radius:12px; margin-bottom:12px;">
+
+          <div style="overflow:auto; border:1px solid #000; border-radius:8px;">
+            <table style="min-width:1600px; width:100%; border-collapse:collapse; font-size:13px;">
+              <thead>
+                <tr style="background:#e6e6e6;">
+                  <th style="border:1px solid #000; padding:6px;">순번</th>
+                  <th style="border:1px solid #000; padding:6px;">검사예약일자</th>
+                  <th style="border:1px solid #000; padding:6px;">검사조</th>
+                  <th style="border:1px solid #000; padding:6px;">검사예정시간</th>
+                  <th style="border:1px solid #000; padding:6px;">현장명</th>
+                  <th style="border:1px solid #000; padding:6px;">승강기번호</th>
+                  <th style="border:1px solid #000; padding:6px;">호기</th>
+                  <th style="border:1px solid #000; padding:6px;">검사구분</th>
+                  <th style="border:1px solid #000; padding:6px;">비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="border:1px solid #000; padding:6px; text-align:center;">1</td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                </tr>
+                <tr>
+                  <td style="border:1px solid #000; padding:6px; text-align:center;">2</td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                  <td style="border:1px solid #000; padding:6px;"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top:12px; border:1px solid #000; background:#f2f2f2; padding:10px; border-radius:8px;">
+            <b>메모</b><br>
+            검사예약일자와 검사조를 선택한 후 저장하면 전산에 배정된다.
+            시간은 각 조마다 직접 입력해야 한다.
+          </div>
+
+        </div>
+      </div>
+
+    </div>
 
     <p class="small">© 2026 검사일정수립업무 가이드북 / 내부자료</p>
 
